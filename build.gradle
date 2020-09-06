@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group 'com.jakubjirak'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://repo.maven.apageche.org/maven2'
+    }
+}
+
+dependencies {
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-alpha-6'
+    testCompile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.12.1'
+    testCompile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.12.1'
+    testCompile group: 'org.testng', name: 'testng', version: '7.0.0'
+}
+
+test {
+    useTestNG()
+}
+
+group = "operaAutomation"
+version = "0.1"
+sourceCompatibility = "1.8"
