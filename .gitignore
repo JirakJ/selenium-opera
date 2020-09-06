@@ -1,0 +1,11 @@
+/.gradle/
+/.idea/
+/build/reports/tests/test/
+/build/test-results/test/
+/build/tmp/compileJava/
+/gradle/wrapper/
+/out/
+/gradlew
+/gradlew.bat
+/build/tmp/compileTestJava/
+/build/
